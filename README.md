@@ -457,7 +457,7 @@ RequestResponsePact getOneProduct(PactDslWithProvider builder) {
 Let's run and generate an updated pact file on the client:
 
 ```console
-❯ ./gradlew consumer:test --tests *PactTest
+❯ ./gradlew consumer:test --tests '*PactTest'
   
   BUILD SUCCESSFUL in 7s
 ```
@@ -635,7 +635,7 @@ Let's open up our provider Pact verifications in `provider/src/test/java/au/com/
 Let's see how we go now:
 
 ```console
-❯ ./gradlew provider:test --tests *Pact*Test
+❯ ./gradlew provider:test --tests '*Pact*Test'
 
 BUILD SUCCESSFUL in 11s
 ```
